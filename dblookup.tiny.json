@@ -1,0 +1,12 @@
+{
+  "anopheles_gambiae_variation_28_2c" : {
+    "database" : "anopheles_gambiae_variation_28_2c",
+    "path" : "/pub/release-28/anopheles-28.2c/data/mysql/anopheles_gambiae_variation_28_2c",
+    "server" : "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_core_28_2c" : {
+    "database" : "anopheles_gambiae_core_28_2c",
+    "path" : "/pub/release-28/anopheles-28.2c/data/mysql/anopheles_gambiae_core_28_2c",
+    "server" : "ftp.ensembl.org"
+  }
+}
