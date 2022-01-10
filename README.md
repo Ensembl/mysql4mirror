@@ -166,10 +166,6 @@ These scripts have been tested with `ensembl_help_28` and `homo_sapiens_core_40_
 
 # TODO
 
-1. ~~Test another database load~~
-2. Test running this with singularity if possible
-3. Create a new GitHub repo
-4. ~~Upload to DockerHub alongside fixing contributors lists & paying for it~~
-5. ~~Validate how we will do the volumes and double check it works as expected~~
-6. ~~Write up SOP for loading databases~~
-7. Dump missing databases, write them to FTP and add to the dblookup.json file
+1. Test running this with singularity if possible
+2. Load missing databases (24-28) to FTP
+3. Add databases to dblookup.json and publish
