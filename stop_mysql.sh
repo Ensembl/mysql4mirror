@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# Copy/dervied from code held at https://github.com/Tommi2Day/mysql4
+#
+
 if ls -1 /db/*.pid >/dev/null 2>&1; then
 	kill $(cat /db/*.pid)
 elif  ps -ef|grep "[m]ysqld" >/dev/null; then

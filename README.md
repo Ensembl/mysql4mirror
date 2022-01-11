@@ -1,6 +1,6 @@
 # Ensembl MySQL v4 mirror
 
-This is based on the work by [https://github.com/Tommi2Day/mysql4](Tommi2Day/mysql4) in building MySQL 4 deployments. This code has been modified to include additional tooling to make it easier to load and query Ensembl databases within a running instance.
+This is based on the work by [https://github.com/Tommi2Day/mysql4](https://github.com/Tommi2Day/mysql4) in building MySQL 4 deployments. This code has been modified to include additional tooling to make it easier to load and query Ensembl databases within a running instance.
 
 # Running the container with Docker
 Specify the `MYSQL_ROOT_PASSWORD` environment variable and a volume for the datafiles when launching a new container:

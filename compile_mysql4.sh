@@ -1,4 +1,9 @@
 #!/bin/sh
+
+#
+# Copy/dervied from code held at https://github.com/Tommi2Day/mysql4
+#
+
 # script to compile mysql4 for docker
 
 #make data dir

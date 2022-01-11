@@ -1,3 +1,7 @@
+#
+# Copy/dervied from code held at https://github.com/Tommi2Day/mysql4
+#
+
 FROM ubuntu:12.04
 LABEL maintainer="helpdesk@ensembl.org"
 

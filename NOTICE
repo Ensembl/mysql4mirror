@@ -1,0 +1,17 @@
+Ensembl
+Copyright 2022 EMBL-European Bioinformatics Institute
+
+This product includes software developed at:
+- EMBL-European Bioinformatics Institute
+
+The initial developer of this codebase, which are copied from, derived from, or inspried by
+Thomas Dressler's (https://github.com/Tommi2Day) repository for a MySQL4 docker image (https://github.com/Tommi2Day/mysql4).
+
+No license or copyright was applied to the code in:
+
+- stop_mysql.sh
+- start.sh
+- compile_mysql4.sh
+- Dockerfile
+
+Works presented here are derived from that original work.

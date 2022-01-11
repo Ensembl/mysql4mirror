@@ -1,4 +1,9 @@
 #!/bin/bash
+
+#
+# Copy/dervied from code held at https://github.com/Tommi2Day/mysql4
+#
+
 set -e
 HOSTNAME=${HOSTNAME:-mysql4mirror}
 MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-mysql4mirror}
