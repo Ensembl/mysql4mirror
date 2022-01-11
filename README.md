@@ -10,17 +10,18 @@ export LOCAL_DB_DIR=/volume1/docker/mysql
 export LOCAL_FLATFILES_DIR=/volume1/docker/flatfiles
 export CONTAINER_NAME=mysql4mirror
 export MYSQL_ROOT_PASSWORD=mysql4mirror
-docker run --name $CONTAINER_NAME \
+export TAG=latest
+docker run --name ${CONTAINER_NAME} \
 --add-host="mysql4mirror:127.0.0.1" \
--e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD \
--v $LOCAL_DB_DIR:/db \
--v $LOCAL_FLATFILES_DIR:/flatfiles \
+-e MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD} \
+-v ${LOCAL_DB_DIR}:/db \
+-v ${LOCAL_FLATFILES_DIR}:/flatfiles \
 -p 33306:3306 \
 --detach \
-ensemblorg/mysql4mirror
+ensemblorg/mysql4mirror:${TAG}
 ```
 
-This will run the container as a detached process, expose the MySQL server locally on port `33306`, mount `/db` on the container to `/volume1/docker/mysql` locally and mount `/flatfiles` to `/volume1/docker/flatfiles` locally. You can confirm the image has started by running `docker ps`. Only one MySQL user exists on the server `root` and is set to the password you gave the container during startup.
+This will run the container as a detached process, expose the MySQL on your local machine on port `33306` (within the container this will be remain `3306`), mount `/db` on the container to `/volume1/docker/mysql` locally and mount `/flatfiles` to `/volume1/docker/flatfiles` locally. You can confirm the image has started by running `docker ps`. Only one MySQL user exists on the server `root` and is set to the password you gave the container during startup.
 
 ## Opening a shell into the container
 
@@ -28,13 +29,41 @@ This will run the container as a detached process, expose the MySQL server local
 docker exec -it $CONTAINER_NAME /bin/bash
 ```
 
-Once in the container you will have access to the `ensembl_databases.py` and `load_mysql.sh` commands.
+Once in the container you will have access to the `ensembl_databases.py` and `load_mysql.sh` commands and is the recommended way to use the `load_mysql.sh` command as working with MySQL 4 databases can be problematic if you lack the compatible binaries/libraries.
+
+## Stopping the container
+
+```sh
+docker stop $CONTAINER_NAME
+```
 
 ## Restarting the container
 
 ```sh
 docker restart $CONTAINER_NAME
 ```
+
+# Experimental Singularity support
+
+**The following comand will start up a MySQL server on your local machine and expose a port on 3306**.
+
+```sh
+export LOCAL_DB_DIR=/volume1/docker/mysql
+export LOCAL_FLATFILES_DIR=/volume1/docker/flatfiles
+export MYSQL_ROOT_PASSWORD=mysql4mirror
+export TAG=latest
+singularity exec --bind $LOCAL_DB_DIR:/db --bind $LOCAL_FLATFILES_DIR:/flatfiles docker://ensemblorg/mysql4mirror:${TAG} /additional/start.sh mysqld_safe
+```
+
+The first time you run `/additional/start.sh` will setup the correct user permissions and will then initate `mysqld_safe`. This will start the MySQL server. Subsequent runs will test `/db` for pre-existing files, which if found means setup will be skipped and only `mysqld_safe` will be run.
+
+## Starting a container shell session with Singularity
+
+```sh
+singularity shell --bind $LOCAL_DB_DIR:/db --bind $LOCAL_FLATFILES_DIR:/flatfiles docker://ensemblorg/mysql4mirror:${TAG}
+```
+
+This will start a new container with access to the MySQL data directory and flatfiles directory under `/db` and `/flatfiles` respectively.
 
 # Populating the running instance with Ensembl databases
 
@@ -85,9 +114,11 @@ _The following commands assume you will be loading the `ensembl_help_28_1` datab
 
 ### Using `load_mysql.sh`
 
-This container and repo ship with a bash script called `load_mysql.sh`. The script must be executed from within a working directory containing a database dump. The command will change its commands based on if it finds the `ENSEMBL_CONTAINER` environment variable.
+This container and repo ship with a bash script called `load_mysql.sh`. The script must be executed from within a working directory containing a database dump. The command will change its commands based on if it finds the `ENSEMBL_CONTAINER` environment variable. You can change the port used too by supplying a `MYSQL_PORT` environment variable.
 
 **`load_mysql.sh` executes all commands in MySQL as the root user. The script repsonds to the `MYSQL_ROOT_PASSWORD` variable and will use this if ever defined.**
+
+We recommend running `load_mysql.sh` from within a container (see instructions above about how to get a shell session into the executing container or a new container).
 
 ```sh
 $ cd ensembl_help_28_1
@@ -166,6 +197,5 @@ These scripts have been tested with `ensembl_help_28` and `homo_sapiens_core_40_
 
 # TODO
 
-1. Test running this with singularity if possible
-2. Load missing databases (24-28) to FTP
-3. Add databases to dblookup.json and publish
+1. Load missing databases (24-28) to FTP
+2. Add databases to dblookup.json and publish

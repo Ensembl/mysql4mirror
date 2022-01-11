@@ -26,9 +26,11 @@ COPY compile_mysql4.sh mysql-4.1.25.tar.gz /root/
 RUN chmod +x /root/compile_mysql4.sh
 RUN /root/compile_mysql4.sh
 
-#add entrypoint
-COPY start.sh stop_mysql.sh /root/
-RUN chmod +x /root/*.sh
+#add entrypoint but under /additional
+RUN mkdir /additional
+RUN chmod ugo+rx /additional
+COPY start.sh stop_mysql.sh /additional/
+RUN chmod ugo+x /additional/*.sh
 
 #interfaces
 EXPOSE 3306
@@ -44,5 +46,5 @@ COPY dblookup.json /etc/.
 ENV ENSEMBL_DBLOOKUP /etc/dblookup.json
 
 #define entrypoint
-ENTRYPOINT ["/root/start.sh"]
+ENTRYPOINT ["/additional/start.sh"]
 CMD ["mysqld_safe"]
