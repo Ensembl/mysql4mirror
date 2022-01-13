@@ -71,7 +71,7 @@ This will start a new container with access to the MySQL data directory and flat
 
 ### Using `ensembl_databases.py`
 
-This container ships with a Python binary which can list, download and verify databases from releases 23 to 48 (those which should be hosted in a MySQL v4 instance). The library only uses core modules and is compatible with Python v3.2+. You can run it from within the container or from this repository. The binary can
+This container ships with a Python binary which can list, download and verify databases from releases 23 to 47 (those which should be hosted in a MySQL v4 instance). The library only uses core modules and is compatible with Python v3.2+. You can run it from within the container or from this repository. The binary can
 
 - List the available databases
 - Display information about the database
