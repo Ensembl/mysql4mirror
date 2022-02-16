@@ -1,4 +1,859 @@
 {
+  "anopheles_gambiae_core_24_2b": {
+    "database": "anopheles_gambiae_core_24_2b",
+    "path": "/pub/release-24/anopheles-24.2b/data/mysql/anopheles_gambiae_core_24_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_estgene_24_2b": {
+    "database": "anopheles_gambiae_estgene_24_2b",
+    "path": "/pub/release-24/anopheles-24.2b/data/mysql/anopheles_gambiae_estgene_24_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_lite_24_2b": {
+    "database": "anopheles_gambiae_lite_24_2b",
+    "path": "/pub/release-24/anopheles-24.2b/data/mysql/anopheles_gambiae_lite_24_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_snp_24_2b": {
+    "database": "anopheles_gambiae_snp_24_2b",
+    "path": "/pub/release-24/anopheles-24.2b/data/mysql/anopheles_gambiae_snp_24_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "apis_mellifera_core_24_1": {
+    "database": "apis_mellifera_core_24_1",
+    "path": "/pub/release-24/honeybee-24.1/data/mysql/apis_mellifera_core_24_1",
+    "server": "ftp.ensembl.org"
+  },
+  "caenorhabditis_briggsae_core_24_25": {
+    "database": "caenorhabditis_briggsae_core_24_25",
+    "path": "/pub/release-24/cbriggsae-24.25/data/mysql/caenorhabditis_briggsae_core_24_25",
+    "server": "ftp.ensembl.org"
+  },
+  "caenorhabditis_briggsae_estgene_24_25": {
+    "database": "caenorhabditis_briggsae_estgene_24_25",
+    "path": "/pub/release-24/cbriggsae-24.25/data/mysql/caenorhabditis_briggsae_estgene_24_25",
+    "server": "ftp.ensembl.org"
+  },
+  "caenorhabditis_elegans_core_24_116a": {
+    "database": "caenorhabditis_elegans_core_24_116a",
+    "path": "/pub/release-24/celegans-24.116a/data/mysql/caenorhabditis_elegans_core_24_116a",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_core_24_4": {
+    "database": "danio_rerio_core_24_4",
+    "path": "/pub/release-24/zebrafish-24.4/data/mysql/danio_rerio_core_24_4",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_est_24_4": {
+    "database": "danio_rerio_est_24_4",
+    "path": "/pub/release-24/zebrafish-24.4/data/mysql/danio_rerio_est_24_4",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_estgene_24_4": {
+    "database": "danio_rerio_estgene_24_4",
+    "path": "/pub/release-24/zebrafish-24.4/data/mysql/danio_rerio_estgene_24_4",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_lite_24_4": {
+    "database": "danio_rerio_lite_24_4",
+    "path": "/pub/release-24/zebrafish-24.4/data/mysql/danio_rerio_lite_24_4",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_snp_24_4": {
+    "database": "danio_rerio_snp_24_4",
+    "path": "/pub/release-24/zebrafish-24.4/data/mysql/danio_rerio_snp_24_4",
+    "server": "ftp.ensembl.org"
+  },
+  "drosophila_melanogaster_core_24_3b": {
+    "database": "drosophila_melanogaster_core_24_3b",
+    "path": "/pub/release-24/fly-24.3b/data/mysql/drosophila_melanogaster_core_24_3b",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_compara_24_1": {
+    "database": "ensembl_compara_24_1",
+    "path": "/pub/release-24/multi-species-24.1/data/mysql/ensembl_compara_24_1",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_go_24_1": {
+    "database": "ensembl_go_24_1",
+    "path": "/pub/release-24/multi-species-24.1/data/mysql/ensembl_go_24_1",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_mart_24_1": {
+    "database": "ensembl_mart_24_1",
+    "path": "/pub/release-24/mart-24.1/data/mysql/ensembl_mart_24_1",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_core_24_2c": {
+    "database": "fugu_rubripes_core_24_2c",
+    "path": "/pub/release-24/fugu-24.2c/data/mysql/fugu_rubripes_core_24_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_est_24_2c": {
+    "database": "fugu_rubripes_est_24_2c",
+    "path": "/pub/release-24/fugu-24.2c/data/mysql/fugu_rubripes_est_24_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_estgene_24_2c": {
+    "database": "fugu_rubripes_estgene_24_2c",
+    "path": "/pub/release-24/fugu-24.2c/data/mysql/fugu_rubripes_estgene_24_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_core_24_1a": {
+    "database": "gallus_gallus_core_24_1a",
+    "path": "/pub/release-24/chicken-24.1a/data/mysql/gallus_gallus_core_24_1a",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_est_24_1a": {
+    "database": "gallus_gallus_est_24_1a",
+    "path": "/pub/release-24/chicken-24.1a/data/mysql/gallus_gallus_est_24_1a",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_estgene_24_1a": {
+    "database": "gallus_gallus_estgene_24_1a",
+    "path": "/pub/release-24/chicken-24.1a/data/mysql/gallus_gallus_estgene_24_1a",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_lite_24_1a": {
+    "database": "gallus_gallus_lite_24_1a",
+    "path": "/pub/release-24/chicken-24.1a/data/mysql/gallus_gallus_lite_24_1a",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_snp_24_1a": {
+    "database": "gallus_gallus_snp_24_1a",
+    "path": "/pub/release-24/chicken-24.1a/data/mysql/gallus_gallus_snp_24_1a",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_core_24_34e": {
+    "database": "homo_sapiens_core_24_34e",
+    "path": "/pub/release-24/human-24.34e/data/mysql/homo_sapiens_core_24_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_disease_24_34e": {
+    "database": "homo_sapiens_disease_24_34e",
+    "path": "/pub/release-24/human-24.34e/data/mysql/homo_sapiens_disease_24_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_est_24_34e": {
+    "database": "homo_sapiens_est_24_34e",
+    "path": "/pub/release-24/human-24.34e/data/mysql/homo_sapiens_est_24_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_estgene_24_34e": {
+    "database": "homo_sapiens_estgene_24_34e",
+    "path": "/pub/release-24/human-24.34e/data/mysql/homo_sapiens_estgene_24_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_haplotype_24_34e": {
+    "database": "homo_sapiens_haplotype_24_34e",
+    "path": "/pub/release-24/human-24.34e/data/mysql/homo_sapiens_haplotype_24_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_lite_24_34e": {
+    "database": "homo_sapiens_lite_24_34e",
+    "path": "/pub/release-24/human-24.34e/data/mysql/homo_sapiens_lite_24_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_snp_24_34e": {
+    "database": "homo_sapiens_snp_24_34e",
+    "path": "/pub/release-24/human-24.34e/data/mysql/homo_sapiens_snp_24_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_vega_24_34e": {
+    "database": "homo_sapiens_vega_24_34e",
+    "path": "/pub/release-24/human-24.34e/data/mysql/homo_sapiens_vega_24_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_core_24_33": {
+    "database": "mus_musculus_core_24_33",
+    "path": "/pub/release-24/mouse-24.33/data/mysql/mus_musculus_core_24_33",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_est_24_33": {
+    "database": "mus_musculus_est_24_33",
+    "path": "/pub/release-24/mouse-24.33/data/mysql/mus_musculus_est_24_33",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_estgene_24_33": {
+    "database": "mus_musculus_estgene_24_33",
+    "path": "/pub/release-24/mouse-24.33/data/mysql/mus_musculus_estgene_24_33",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_lite_24_33": {
+    "database": "mus_musculus_lite_24_33",
+    "path": "/pub/release-24/mouse-24.33/data/mysql/mus_musculus_lite_24_33",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_snp_24_33": {
+    "database": "mus_musculus_snp_24_33",
+    "path": "/pub/release-24/mouse-24.33/data/mysql/mus_musculus_snp_24_33",
+    "server": "ftp.ensembl.org"
+  },
+  "pan_troglodytes_core_24_1": {
+    "database": "pan_troglodytes_core_24_1",
+    "path": "/pub/release-24/chimp-24.1/data/mysql/pan_troglodytes_core_24_1",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_core_24_3c": {
+    "database": "rattus_norvegicus_core_24_3c",
+    "path": "/pub/release-24/rat-24.3c/data/mysql/rattus_norvegicus_core_24_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_est_24_3c": {
+    "database": "rattus_norvegicus_est_24_3c",
+    "path": "/pub/release-24/rat-24.3c/data/mysql/rattus_norvegicus_est_24_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_estgene_24_3c": {
+    "database": "rattus_norvegicus_estgene_24_3c",
+    "path": "/pub/release-24/rat-24.3c/data/mysql/rattus_norvegicus_estgene_24_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_lite_24_3c": {
+    "database": "rattus_norvegicus_lite_24_3c",
+    "path": "/pub/release-24/rat-24.3c/data/mysql/rattus_norvegicus_lite_24_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_snp_24_3c": {
+    "database": "rattus_norvegicus_snp_24_3c",
+    "path": "/pub/release-24/rat-24.3c/data/mysql/rattus_norvegicus_snp_24_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "tetraodon_nigroviridis_core_24_1": {
+    "database": "tetraodon_nigroviridis_core_24_1",
+    "path": "/pub/release-24/tetraodon-24.1/data/mysql/tetraodon_nigroviridis_core_24_1",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_core_25_2b": {
+    "database": "anopheles_gambiae_core_25_2b",
+    "path": "/pub/release-25/anopheles-25.2b/data/mysql/anopheles_gambiae_core_25_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_estgene_25_2b": {
+    "database": "anopheles_gambiae_estgene_25_2b",
+    "path": "/pub/release-25/anopheles-25.2b/data/mysql/anopheles_gambiae_estgene_25_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_lite_25_2b": {
+    "database": "anopheles_gambiae_lite_25_2b",
+    "path": "/pub/release-25/anopheles-25.2b/data/mysql/anopheles_gambiae_lite_25_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_snp_25_2b": {
+    "database": "anopheles_gambiae_snp_25_2b",
+    "path": "/pub/release-25/anopheles-25.2b/data/mysql/anopheles_gambiae_snp_25_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "apis_mellifera_core_25_1": {
+    "database": "apis_mellifera_core_25_1",
+    "path": "/pub/release-25/honeybee-25.1/data/mysql/apis_mellifera_core_25_1",
+    "server": "ftp.ensembl.org"
+  },
+  "caenorhabditis_briggsae_core_25_25": {
+    "database": "caenorhabditis_briggsae_core_25_25",
+    "path": "/pub/release-25/cbriggsae-25.25/data/mysql/caenorhabditis_briggsae_core_25_25",
+    "server": "ftp.ensembl.org"
+  },
+  "caenorhabditis_briggsae_estgene_25_25": {
+    "database": "caenorhabditis_briggsae_estgene_25_25",
+    "path": "/pub/release-25/cbriggsae-25.25/data/mysql/caenorhabditis_briggsae_estgene_25_25",
+    "server": "ftp.ensembl.org"
+  },
+  "caenorhabditis_elegans_core_25_116a": {
+    "database": "caenorhabditis_elegans_core_25_116a",
+    "path": "/pub/release-25/celegans-25.116a/data/mysql/caenorhabditis_elegans_core_25_116a",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_core_25_4": {
+    "database": "danio_rerio_core_25_4",
+    "path": "/pub/release-25/zebrafish-25.4/data/mysql/danio_rerio_core_25_4",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_est_25_4": {
+    "database": "danio_rerio_est_25_4",
+    "path": "/pub/release-25/zebrafish-25.4/data/mysql/danio_rerio_est_25_4",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_estgene_25_4": {
+    "database": "danio_rerio_estgene_25_4",
+    "path": "/pub/release-25/zebrafish-25.4/data/mysql/danio_rerio_estgene_25_4",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_lite_25_4": {
+    "database": "danio_rerio_lite_25_4",
+    "path": "/pub/release-25/zebrafish-25.4/data/mysql/danio_rerio_lite_25_4",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_snp_25_4": {
+    "database": "danio_rerio_snp_25_4",
+    "path": "/pub/release-25/zebrafish-25.4/data/mysql/danio_rerio_snp_25_4",
+    "server": "ftp.ensembl.org"
+  },
+  "drosophila_melanogaster_core_25_3b": {
+    "database": "drosophila_melanogaster_core_25_3b",
+    "path": "/pub/release-25/fly-25.3b/data/mysql/drosophila_melanogaster_core_25_3b",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_compara_25_1": {
+    "database": "ensembl_compara_25_1",
+    "path": "/pub/release-25/multi-species-25.1/data/mysql/ensembl_compara_25_1",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_go_25_1": {
+    "database": "ensembl_go_25_1",
+    "path": "/pub/release-25/multi-species-25.1/data/mysql/ensembl_go_25_1",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_mart_25_1": {
+    "database": "ensembl_mart_25_1",
+    "path": "/pub/release-25/mart-25.1/data/mysql/ensembl_mart_25_1",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_core_25_2c": {
+    "database": "fugu_rubripes_core_25_2c",
+    "path": "/pub/release-25/fugu-25.2c/data/mysql/fugu_rubripes_core_25_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_est_25_2c": {
+    "database": "fugu_rubripes_est_25_2c",
+    "path": "/pub/release-25/fugu-25.2c/data/mysql/fugu_rubripes_est_25_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_estgene_25_2c": {
+    "database": "fugu_rubripes_estgene_25_2c",
+    "path": "/pub/release-25/fugu-25.2c/data/mysql/fugu_rubripes_estgene_25_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_core_25_1b": {
+    "database": "gallus_gallus_core_25_1b",
+    "path": "/pub/release-25/chicken-25.1b/data/mysql/gallus_gallus_core_25_1b",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_est_25_1b": {
+    "database": "gallus_gallus_est_25_1b",
+    "path": "/pub/release-25/chicken-25.1b/data/mysql/gallus_gallus_est_25_1b",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_estgene_25_1b": {
+    "database": "gallus_gallus_estgene_25_1b",
+    "path": "/pub/release-25/chicken-25.1b/data/mysql/gallus_gallus_estgene_25_1b",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_lite_25_1b": {
+    "database": "gallus_gallus_lite_25_1b",
+    "path": "/pub/release-25/chicken-25.1b/data/mysql/gallus_gallus_lite_25_1b",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_snp_25_1b": {
+    "database": "gallus_gallus_snp_25_1b",
+    "path": "/pub/release-25/chicken-25.1b/data/mysql/gallus_gallus_snp_25_1b",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_core_25_34e": {
+    "database": "homo_sapiens_core_25_34e",
+    "path": "/pub/release-25/human-25.34e/data/mysql/homo_sapiens_core_25_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_disease_25_34e": {
+    "database": "homo_sapiens_disease_25_34e",
+    "path": "/pub/release-25/human-25.34e/data/mysql/homo_sapiens_disease_25_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_est_25_34e": {
+    "database": "homo_sapiens_est_25_34e",
+    "path": "/pub/release-25/human-25.34e/data/mysql/homo_sapiens_est_25_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_estgene_25_34e": {
+    "database": "homo_sapiens_estgene_25_34e",
+    "path": "/pub/release-25/human-25.34e/data/mysql/homo_sapiens_estgene_25_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_haplotype_25_34e": {
+    "database": "homo_sapiens_haplotype_25_34e",
+    "path": "/pub/release-25/human-25.34e/data/mysql/homo_sapiens_haplotype_25_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_lite_25_34e": {
+    "database": "homo_sapiens_lite_25_34e",
+    "path": "/pub/release-25/human-25.34e/data/mysql/homo_sapiens_lite_25_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_snp_25_34e": {
+    "database": "homo_sapiens_snp_25_34e",
+    "path": "/pub/release-25/human-25.34e/data/mysql/homo_sapiens_snp_25_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_vega_25_34e": {
+    "database": "homo_sapiens_vega_25_34e",
+    "path": "/pub/release-25/human-25.34e/data/mysql/homo_sapiens_vega_25_34e",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_core_25_33a": {
+    "database": "mus_musculus_core_25_33a",
+    "path": "/pub/release-25/mouse-25.33a/data/mysql/mus_musculus_core_25_33a",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_est_25_33a": {
+    "database": "mus_musculus_est_25_33a",
+    "path": "/pub/release-25/mouse-25.33a/data/mysql/mus_musculus_est_25_33a",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_estgene_25_33a": {
+    "database": "mus_musculus_estgene_25_33a",
+    "path": "/pub/release-25/mouse-25.33a/data/mysql/mus_musculus_estgene_25_33a",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_lite_25_33a": {
+    "database": "mus_musculus_lite_25_33a",
+    "path": "/pub/release-25/mouse-25.33a/data/mysql/mus_musculus_lite_25_33a",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_snp_25_33a": {
+    "database": "mus_musculus_snp_25_33a",
+    "path": "/pub/release-25/mouse-25.33a/data/mysql/mus_musculus_snp_25_33a",
+    "server": "ftp.ensembl.org"
+  },
+  "pan_troglodytes_core_25_1": {
+    "database": "pan_troglodytes_core_25_1",
+    "path": "/pub/release-25/chimp-25.1/data/mysql/pan_troglodytes_core_25_1",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_core_25_3c": {
+    "database": "rattus_norvegicus_core_25_3c",
+    "path": "/pub/release-25/rat-25.3c/data/mysql/rattus_norvegicus_core_25_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_est_25_3c": {
+    "database": "rattus_norvegicus_est_25_3c",
+    "path": "/pub/release-25/rat-25.3c/data/mysql/rattus_norvegicus_est_25_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_estgene_25_3c": {
+    "database": "rattus_norvegicus_estgene_25_3c",
+    "path": "/pub/release-25/rat-25.3c/data/mysql/rattus_norvegicus_estgene_25_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_lite_25_3c": {
+    "database": "rattus_norvegicus_lite_25_3c",
+    "path": "/pub/release-25/rat-25.3c/data/mysql/rattus_norvegicus_lite_25_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_snp_25_3c": {
+    "database": "rattus_norvegicus_snp_25_3c",
+    "path": "/pub/release-25/rat-25.3c/data/mysql/rattus_norvegicus_snp_25_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "tetraodon_nigroviridis_core_25_1": {
+    "database": "tetraodon_nigroviridis_core_25_1",
+    "path": "/pub/release-25/tetraodon-25.1/data/mysql/tetraodon_nigroviridis_core_25_1",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_core_26_2b": {
+    "database": "anopheles_gambiae_core_26_2b",
+    "path": "/pub/release-26/anopheles-26.2b/data/mysql/anopheles_gambiae_core_26_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_estgene_26_2b": {
+    "database": "anopheles_gambiae_estgene_26_2b",
+    "path": "/pub/release-26/anopheles-26.2b/data/mysql/anopheles_gambiae_estgene_26_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_lite_26_2b": {
+    "database": "anopheles_gambiae_lite_26_2b",
+    "path": "/pub/release-26/anopheles-26.2b/data/mysql/anopheles_gambiae_lite_26_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_snp_26_2b": {
+    "database": "anopheles_gambiae_snp_26_2b",
+    "path": "/pub/release-26/anopheles-26.2b/data/mysql/anopheles_gambiae_snp_26_2b",
+    "server": "ftp.ensembl.org"
+  },
+  "apis_mellifera_core_26_1": {
+    "database": "apis_mellifera_core_26_1",
+    "path": "/pub/release-26/honeybee-26.1/data/mysql/apis_mellifera_core_26_1",
+    "server": "ftp.ensembl.org"
+  },
+  "caenorhabditis_briggsae_core_26_25": {
+    "database": "caenorhabditis_briggsae_core_26_25",
+    "path": "/pub/release-26/cbriggsae-26.25/data/mysql/caenorhabditis_briggsae_core_26_25",
+    "server": "ftp.ensembl.org"
+  },
+  "caenorhabditis_briggsae_estgene_26_25": {
+    "database": "caenorhabditis_briggsae_estgene_26_25",
+    "path": "/pub/release-26/cbriggsae-26.25/data/mysql/caenorhabditis_briggsae_estgene_26_25",
+    "server": "ftp.ensembl.org"
+  },
+  "caenorhabditis_elegans_core_26_116a": {
+    "database": "caenorhabditis_elegans_core_26_116a",
+    "path": "/pub/release-26/celegans-26.116a/data/mysql/caenorhabditis_elegans_core_26_116a",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_core_26_4a": {
+    "database": "danio_rerio_core_26_4a",
+    "path": "/pub/release-26/zebrafish-26.4a/data/mysql/danio_rerio_core_26_4a",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_est_26_4a": {
+    "database": "danio_rerio_est_26_4a",
+    "path": "/pub/release-26/zebrafish-26.4a/data/mysql/danio_rerio_est_26_4a",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_estgene_26_4a": {
+    "database": "danio_rerio_estgene_26_4a",
+    "path": "/pub/release-26/zebrafish-26.4a/data/mysql/danio_rerio_estgene_26_4a",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_lite_26_4a": {
+    "database": "danio_rerio_lite_26_4a",
+    "path": "/pub/release-26/zebrafish-26.4a/data/mysql/danio_rerio_lite_26_4a",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_snp_26_4a": {
+    "database": "danio_rerio_snp_26_4a",
+    "path": "/pub/release-26/zebrafish-26.4a/data/mysql/danio_rerio_snp_26_4a",
+    "server": "ftp.ensembl.org"
+  },
+  "drosophila_melanogaster_core_26_3b": {
+    "database": "drosophila_melanogaster_core_26_3b",
+    "path": "/pub/release-26/fly-26.3b/data/mysql/drosophila_melanogaster_core_26_3b",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_compara_26_1": {
+    "database": "ensembl_compara_26_1",
+    "path": "/pub/release-26/multi-species-26.1/data/mysql/ensembl_compara_26_1",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_go_26_1": {
+    "database": "ensembl_go_26_1",
+    "path": "/pub/release-26/multi-species-26.1/data/mysql/ensembl_go_26_1",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_mart_26_1": {
+    "database": "ensembl_mart_26_1",
+    "path": "/pub/release-26/mart-26.1/data/mysql/ensembl_mart_26_1",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_core_26_2c": {
+    "database": "fugu_rubripes_core_26_2c",
+    "path": "/pub/release-26/fugu-26.2c/data/mysql/fugu_rubripes_core_26_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_est_26_2c": {
+    "database": "fugu_rubripes_est_26_2c",
+    "path": "/pub/release-26/fugu-26.2c/data/mysql/fugu_rubripes_est_26_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_estgene_26_2c": {
+    "database": "fugu_rubripes_estgene_26_2c",
+    "path": "/pub/release-26/fugu-26.2c/data/mysql/fugu_rubripes_estgene_26_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_core_26_1c": {
+    "database": "gallus_gallus_core_26_1c",
+    "path": "/pub/release-26/chicken-26.1c/data/mysql/gallus_gallus_core_26_1c",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_est_26_1c": {
+    "database": "gallus_gallus_est_26_1c",
+    "path": "/pub/release-26/chicken-26.1c/data/mysql/gallus_gallus_est_26_1c",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_estgene_26_1c": {
+    "database": "gallus_gallus_estgene_26_1c",
+    "path": "/pub/release-26/chicken-26.1c/data/mysql/gallus_gallus_estgene_26_1c",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_lite_26_1c": {
+    "database": "gallus_gallus_lite_26_1c",
+    "path": "/pub/release-26/chicken-26.1c/data/mysql/gallus_gallus_lite_26_1c",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_snp_26_1c": {
+    "database": "gallus_gallus_snp_26_1c",
+    "path": "/pub/release-26/chicken-26.1c/data/mysql/gallus_gallus_snp_26_1c",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_core_26_35": {
+    "database": "homo_sapiens_core_26_35",
+    "path": "/pub/release-26/human-26.35/data/mysql/homo_sapiens_core_26_35",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_disease_26_35": {
+    "database": "homo_sapiens_disease_26_35",
+    "path": "/pub/release-26/human-26.35/data/mysql/homo_sapiens_disease_26_35",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_haplotype_26_35": {
+    "database": "homo_sapiens_haplotype_26_35",
+    "path": "/pub/release-26/human-26.35/data/mysql/homo_sapiens_haplotype_26_35",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_lite_26_35": {
+    "database": "homo_sapiens_lite_26_35",
+    "path": "/pub/release-26/human-26.35/data/mysql/homo_sapiens_lite_26_35",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_snp_26_35": {
+    "database": "homo_sapiens_snp_26_35",
+    "path": "/pub/release-26/human-26.35/data/mysql/homo_sapiens_snp_26_35",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_vega_26_35": {
+    "database": "homo_sapiens_vega_26_35",
+    "path": "/pub/release-26/human-26.35/data/mysql/homo_sapiens_vega_26_35",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_core_26_33b": {
+    "database": "mus_musculus_core_26_33b",
+    "path": "/pub/release-26/mouse-26.33b/data/mysql/mus_musculus_core_26_33b",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_est_26_33b": {
+    "database": "mus_musculus_est_26_33b",
+    "path": "/pub/release-26/mouse-26.33b/data/mysql/mus_musculus_est_26_33b",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_estgene_26_33b": {
+    "database": "mus_musculus_estgene_26_33b",
+    "path": "/pub/release-26/mouse-26.33b/data/mysql/mus_musculus_estgene_26_33b",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_lite_26_33b": {
+    "database": "mus_musculus_lite_26_33b",
+    "path": "/pub/release-26/mouse-26.33b/data/mysql/mus_musculus_lite_26_33b",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_snp_26_33b": {
+    "database": "mus_musculus_snp_26_33b",
+    "path": "/pub/release-26/mouse-26.33b/data/mysql/mus_musculus_snp_26_33b",
+    "server": "ftp.ensembl.org"
+  },
+  "pan_troglodytes_core_26_1": {
+    "database": "pan_troglodytes_core_26_1",
+    "path": "/pub/release-26/chimp-26.1/data/mysql/pan_troglodytes_core_26_1",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_core_26_3d": {
+    "database": "rattus_norvegicus_core_26_3d",
+    "path": "/pub/release-26/rat-26.3d/data/mysql/rattus_norvegicus_core_26_3d",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_est_26_3d": {
+    "database": "rattus_norvegicus_est_26_3d",
+    "path": "/pub/release-26/rat-26.3d/data/mysql/rattus_norvegicus_est_26_3d",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_estgene_26_3d": {
+    "database": "rattus_norvegicus_estgene_26_3d",
+    "path": "/pub/release-26/rat-26.3d/data/mysql/rattus_norvegicus_estgene_26_3d",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_lite_26_3d": {
+    "database": "rattus_norvegicus_lite_26_3d",
+    "path": "/pub/release-26/rat-26.3d/data/mysql/rattus_norvegicus_lite_26_3d",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_snp_26_3d": {
+    "database": "rattus_norvegicus_snp_26_3d",
+    "path": "/pub/release-26/rat-26.3d/data/mysql/rattus_norvegicus_snp_26_3d",
+    "server": "ftp.ensembl.org"
+  },
+  "tetraodon_nigroviridis_core_26_1a": {
+    "database": "tetraodon_nigroviridis_core_26_1a",
+    "path": "/pub/release-26/tetraodon-26.1a/data/mysql/tetraodon_nigroviridis_core_26_1a",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_core_27_2c": {
+    "database": "anopheles_gambiae_core_27_2c",
+    "path": "/pub/release-27/anopheles-27.2c/data/mysql/anopheles_gambiae_core_27_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_estgene_27_2c": {
+    "database": "anopheles_gambiae_estgene_27_2c",
+    "path": "/pub/release-27/anopheles-27.2c/data/mysql/anopheles_gambiae_estgene_27_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "anopheles_gambiae_variation_27_2c": {
+    "database": "anopheles_gambiae_variation_27_2c",
+    "path": "/pub/release-27/anopheles-27.2c/data/mysql/anopheles_gambiae_variation_27_2c",
+    "server": "ftp.ensembl.org"
+  },
+  "apis_mellifera_core_27_1a": {
+    "database": "apis_mellifera_core_27_1a",
+    "path": "/pub/release-27/honeybee-27.1a/data/mysql/apis_mellifera_core_27_1a",
+    "server": "ftp.ensembl.org"
+  },
+  "caenorhabditis_elegans_core_27_130": {
+    "database": "caenorhabditis_elegans_core_27_130",
+    "path": "/pub/release-27/celegans-27.130/data/mysql/caenorhabditis_elegans_core_27_130",
+    "server": "ftp.ensembl.org"
+  },
+  "canis_familiaris_core_27_1": {
+    "database": "canis_familiaris_core_27_1",
+    "path": "/pub/release-27/dog-27.1/data/mysql/canis_familiaris_core_27_1",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_core_27_4b": {
+    "database": "danio_rerio_core_27_4b",
+    "path": "/pub/release-27/zebrafish-27.4b/data/mysql/danio_rerio_core_27_4b",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_est_27_4b": {
+    "database": "danio_rerio_est_27_4b",
+    "path": "/pub/release-27/zebrafish-27.4b/data/mysql/danio_rerio_est_27_4b",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_estgene_27_4b": {
+    "database": "danio_rerio_estgene_27_4b",
+    "path": "/pub/release-27/zebrafish-27.4b/data/mysql/danio_rerio_estgene_27_4b",
+    "server": "ftp.ensembl.org"
+  },
+  "danio_rerio_variation_27_4b": {
+    "database": "danio_rerio_variation_27_4b",
+    "path": "/pub/release-27/zebrafish-27.4b/data/mysql/danio_rerio_variation_27_4b",
+    "server": "ftp.ensembl.org"
+  },
+  "drosophila_melanogaster_core_27_3c": {
+    "database": "drosophila_melanogaster_core_27_3c",
+    "path": "/pub/release-27/fly-27.3c/data/mysql/drosophila_melanogaster_core_27_3c",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_compara_27_1": {
+    "database": "ensembl_compara_27_1",
+    "path": "/pub/release-27/multi-species-27.1/data/mysql/ensembl_compara_27_1",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_go_27_1": {
+    "database": "ensembl_go_27_1",
+    "path": "/pub/release-27/multi-species-27.1/data/mysql/ensembl_go_27_1",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_mart_27_1": {
+    "database": "ensembl_mart_27_1",
+    "path": "/pub/release-27/mart-27.1/data/mysql/ensembl_mart_27_1",
+    "server": "ftp.ensembl.org"
+  },
+  "ensembl_website": {
+    "database": "ensembl_website",
+    "path": "/pub/release-27/website-27.1/data/mysql/ensembl_website",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_core_27_2d": {
+    "database": "fugu_rubripes_core_27_2d",
+    "path": "/pub/release-27/fugu-27.2d/data/mysql/fugu_rubripes_core_27_2d",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_est_27_2d": {
+    "database": "fugu_rubripes_est_27_2d",
+    "path": "/pub/release-27/fugu-27.2d/data/mysql/fugu_rubripes_est_27_2d",
+    "server": "ftp.ensembl.org"
+  },
+  "fugu_rubripes_estgene_27_2d": {
+    "database": "fugu_rubripes_estgene_27_2d",
+    "path": "/pub/release-27/fugu-27.2d/data/mysql/fugu_rubripes_estgene_27_2d",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_core_27_1d": {
+    "database": "gallus_gallus_core_27_1d",
+    "path": "/pub/release-27/chicken-27.1d/data/mysql/gallus_gallus_core_27_1d",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_est_27_1d": {
+    "database": "gallus_gallus_est_27_1d",
+    "path": "/pub/release-27/chicken-27.1d/data/mysql/gallus_gallus_est_27_1d",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_estgene_27_1d": {
+    "database": "gallus_gallus_estgene_27_1d",
+    "path": "/pub/release-27/chicken-27.1d/data/mysql/gallus_gallus_estgene_27_1d",
+    "server": "ftp.ensembl.org"
+  },
+  "gallus_gallus_variation_27_1d": {
+    "database": "gallus_gallus_variation_27_1d",
+    "path": "/pub/release-27/chicken-27.1d/data/mysql/gallus_gallus_variation_27_1d",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_core_27_35a": {
+    "database": "homo_sapiens_core_27_35a",
+    "path": "/pub/release-27/human-27.35a/data/mysql/homo_sapiens_core_27_35a",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_disease_27_35a": {
+    "database": "homo_sapiens_disease_27_35a",
+    "path": "/pub/release-27/human-27.35a/data/mysql/homo_sapiens_disease_27_35a",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_est_27_35a": {
+    "database": "homo_sapiens_est_27_35a",
+    "path": "/pub/release-27/human-27.35a/data/mysql/homo_sapiens_est_27_35a",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_estgene_27_35a": {
+    "database": "homo_sapiens_estgene_27_35a",
+    "path": "/pub/release-27/human-27.35a/data/mysql/homo_sapiens_estgene_27_35a",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_variation_27_35a": {
+    "database": "homo_sapiens_variation_27_35a",
+    "path": "/pub/release-27/human-27.35a/data/mysql/homo_sapiens_variation_27_35a",
+    "server": "ftp.ensembl.org"
+  },
+  "homo_sapiens_vega_27_35a": {
+    "database": "homo_sapiens_vega_27_35a",
+    "path": "/pub/release-27/human-27.35a/data/mysql/homo_sapiens_vega_27_35a",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_core_27_33c": {
+    "database": "mus_musculus_core_27_33c",
+    "path": "/pub/release-27/mouse-27.33c/data/mysql/mus_musculus_core_27_33c",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_est_27_33c": {
+    "database": "mus_musculus_est_27_33c",
+    "path": "/pub/release-27/mouse-27.33c/data/mysql/mus_musculus_est_27_33c",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_estgene_27_33c": {
+    "database": "mus_musculus_estgene_27_33c",
+    "path": "/pub/release-27/mouse-27.33c/data/mysql/mus_musculus_estgene_27_33c",
+    "server": "ftp.ensembl.org"
+  },
+  "mus_musculus_variation_27_33c": {
+    "database": "mus_musculus_variation_27_33c",
+    "path": "/pub/release-27/mouse-27.33c/data/mysql/mus_musculus_variation_27_33c",
+    "server": "ftp.ensembl.org"
+  },
+  "pan_troglodytes_core_27_1a": {
+    "database": "pan_troglodytes_core_27_1a",
+    "path": "/pub/release-27/chimp-27.1a/data/mysql/pan_troglodytes_core_27_1a",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_core_27_3e": {
+    "database": "rattus_norvegicus_core_27_3e",
+    "path": "/pub/release-27/rat-27.3e/data/mysql/rattus_norvegicus_core_27_3e",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_est_27_3e": {
+    "database": "rattus_norvegicus_est_27_3e",
+    "path": "/pub/release-27/rat-27.3e/data/mysql/rattus_norvegicus_est_27_3e",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_estgene_27_3e": {
+    "database": "rattus_norvegicus_estgene_27_3e",
+    "path": "/pub/release-27/rat-27.3e/data/mysql/rattus_norvegicus_estgene_27_3e",
+    "server": "ftp.ensembl.org"
+  },
+  "rattus_norvegicus_variation_27_3e": {
+    "database": "rattus_norvegicus_variation_27_3e",
+    "path": "/pub/release-27/rat-27.3e/data/mysql/rattus_norvegicus_variation_27_3e",
+    "server": "ftp.ensembl.org"
+  },
+  "tetraodon_nigroviridis_core_27_1b": {
+    "database": "tetraodon_nigroviridis_core_27_1b",
+    "path": "/pub/release-27/tetraodon-27.1b/data/mysql/tetraodon_nigroviridis_core_27_1b",
+    "server": "ftp.ensembl.org"
+  },
   "anopheles_gambiae_variation_28_2c": {
     "database": "anopheles_gambiae_variation_28_2c",
     "path": "/pub/release-28/anopheles-28.2c/data/mysql/anopheles_gambiae_variation_28_2c",
