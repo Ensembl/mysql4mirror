@@ -194,8 +194,3 @@ Root password will be bound to the wildcard % host to allow login from any netwo
 # Testing status and support
 
 These scripts have been tested with `ensembl_help_28` and `homo_sapiens_core_40_36b`. Should you encounter a problem with running these scripts then [contact Ensembl helpdesk or our developers mailing list](https://www.ensembl.org/info/about/contact/index.html).
-
-# TODO
-
-1. Load missing databases (24-28) to FTP
-2. Add databases to dblookup.json and publish
