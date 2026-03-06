@@ -143,7 +143,7 @@ def main():
                 break
             with gzip.open(path.join(db, "CHECKSUMS.gz"), "rt") as file:
                 checksums = [
-                    tuple(re.split("\s+", x.strip())) for x in file.readlines()
+                    tuple(re.split(r"\s+", x.strip())) for x in file.readlines()
                 ]
             for chk in checksums:
                 target_file = path.join(db, chk[2])
@@ -178,7 +178,7 @@ def bsdchecksum(infile):
             checksum += int.from_bytes(byte, byteorder="big")
             checksum &= 0xFFFF
             byte = f.read(1)
-    return str(checksum)
+    return str(checksum).zfill(5)
 
 
 def blocks(infile):
